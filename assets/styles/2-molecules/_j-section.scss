@@ -1,0 +1,261 @@
+section {
+  &.portfolio{
+    &.hover {
+      background-size: 480px auto;
+      background-repeat: no-repeat;
+      background-position: calc(50% - var(--xmag)) calc(50% - var(--ymag));
+      transition: none;
+      background-blend-mode: lighten;
+      background-image: url('../images/bg-coline.png');
+      background-color: #ffffff96;
+    }
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    border-top: 2px dashed $color-primary;
+    border-bottom: 2px dashed $color-primary;
+    margin-bottom: 16px;
+  }
+  .body {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      max-width: 430px;
+    }
+    &.porfolio {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ul {
+        list-style: none;
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        padding: 0;
+        margin: 0;
+        li {
+          position: relative;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding-left: 8px;
+          padding-right: 8px;
+          border-bottom: 2px dashed $color-primary;
+          margin-bottom: 48px;
+          margin-right: 48px;
+          z-index: 20;
+          h3,p {
+            margin: 0;
+          }
+          h3 {
+            margin-right: 32px;
+            text-transform: none;
+            &.xl {
+              font-size: 56px;
+              line-height: 1;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 0px;
+            background-color: $color-secondary;
+            width: 100%;
+            z-index: -1;
+            display: flex;
+            align-items: flex-start;
+            transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+          }
+          &:hover {
+            border-bottom: 2px dashed $color-secondary;
+            &::after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 40px;
+              background-color: $color-secondary;
+              width: 100%;
+              z-index: -1;
+              display: flex;
+              align-items: flex-start;
+            }
+          }
+        }
+        @media screen and (max-width: $mobile) {
+          flex-wrap: wrap;
+          display: flex;
+          width: 100%;
+          li {
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 24px;
+            margin-right: 0;
+            min-height: 112px;
+            width: 100%;
+            align-items: center;
+            padding-bottom: 24px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $mobile){
+      min-height: 50vh;
+    }
+  }
+
+  &.project {
+    .project-header {
+      // background-image: url(../images/bio-main.jpg);
+      // background-color: rgba(53, 76, 135, 0.16);
+      height: 80vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      background-blend-mode: luminosity;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      hr {
+        border-bottom: dashed 1px;
+        width: 20%;
+        border-color: white;
+      }
+    }
+    .project-body {
+      max-width: $tablet;
+      margin-left: auto;
+      margin-right: auto;
+      section {
+        margin-top: 56px;
+        margin-bottom: 56px;
+      }
+    }
+  }
+}
+
+
+
+
+svg.process {
+  opacity: 0;
+  &.active {
+    opacity: 1;
+      // Design thinking line
+      .design-thinking {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 4s linear forwards;
+      }
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      // Design thinking line
+      .leanux {
+        stroke-dasharray: 300;
+        animation-name: leanux;
+        animation-duration: 30s;
+        animation-timing-function: linear;
+        animation-fill-mode:forwards;
+        animation-direction: alternate-reverse;
+        animation-delay: 6s;
+      }
+      @keyframes leanux {
+        to {
+           stroke-dashoffset: 5000;
+        }
+      }
+      // Circle Animation Experimenta
+      .experimentation {
+        stroke-dasharray: 50;
+        animation-name: dash1;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-direction: alternate-reverse;
+        animation-delay: 3s;
+      }
+      @keyframes dash1 {
+        to {
+          stroke-dashoffset: 580;
+        }
+      }
+      // Circle show
+      .show {
+        opacity: 0;
+        animation-name: dash2;
+        animation-duration: 1.25s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        animation-delay: 0.1s;
+        &:nth-child(2) {
+          animation-delay: 0.3s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.5s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.7s;
+        }
+        &:nth-child(5) {
+          animation-delay: 0.9s;
+        }
+        &:nth-child(6) {
+          animation-delay: 1.1s;
+        }
+        &:nth-child(7) {
+          animation-delay: 3.1s;
+        }
+      }
+      @keyframes dash2 {
+        to {
+          opacity: 1;
+        }
+      }
+      // ShowBIGSETUP
+        // Show Exp Stuff
+        .showExp {
+          opacity: 0;
+          animation-name: showExp;
+          animation-duration: 1.25s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          animation-delay: 3s;
+
+        }
+        @keyframes showExp {
+          to {
+            opacity: 1;
+          }
+        }
+        // Show Lean Stuff
+        .showLean {
+          opacity: 0;
+          animation-name: showLean;
+          animation-duration: 1.24s;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards;
+          animation-delay: 6s;
+
+        }
+        @keyframes showLean {
+        to {
+          opacity: 1;
+        }
+      }
+  }
+}

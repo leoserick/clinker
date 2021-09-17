@@ -1,0 +1,87 @@
+footer {
+  background-image: url(../images/background-footer.svg);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+  background-repeat: inherit;
+  background-size: 290px;
+  background-color: white;
+  .j-wrap {
+    width: 100%;
+  }
+  h3 {
+    width: 100%;
+    text-align: right;
+  }
+  p {
+    text-align: right;
+    max-width: 536px;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 100%;
+    text-align: right;
+  }
+  input{
+    min-width: 0 !important;
+    max-width: 260px !important;
+    margin-left: 16px;
+  }
+  textarea {
+    max-width: 536px;
+    margin-left: 16px;
+  }
+  .unit {
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-right: 32px !important;
+      border-right: 2px dashed white;
+      text-align: right;
+      @media screen and (max-width: $mobile){
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-right: 0 !important;
+        border-right: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+        border-bottom: 2px dashed white;
+      }
+    }
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+          align-items: flex-end;
+      justify-content: flex-start;
+      margin-left: 32px !important;
+      @media screen and (max-width: $mobile){
+        align-items: center;
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .sub-footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+  }
+
+}

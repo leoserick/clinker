@@ -1,0 +1,26 @@
+.alert-message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  max-width: 1232px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  a {
+    &:first-child {
+      width: 100%;
+      text-align: center;
+      p {
+        margin: 0;
+      }
+    }
+    &:nth-child(2) {
+      img {
+        margin: 0;
+        height: 16px;
+      }
+    }
+  }
+}

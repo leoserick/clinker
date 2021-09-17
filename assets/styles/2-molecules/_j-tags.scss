@@ -1,0 +1,50 @@
+label.tag {
+  width: 100%;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    &.blue {
+      background-color: rgba(0, 133, 255, 0.5);
+    }
+    &.green {
+      background-color: rgba(6, 128, 35, 0.5);
+    }
+    &.yellow {
+      background-color: rgba(173, 139, 0, 0.5);
+    }
+    &.red {
+      background-color: rgba(244, 67, 54, .5);
+    }
+}
+label.tag-task {
+  width: fit-content;
+  border: 2px solid $gray-darker;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  span {
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 8px;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid $gray-darker;
+    background-color: $gray-dark;
+    &.positive {
+      background-color: #4caf50;
+    }
+    &.negative {
+      background-color: #f44336;
+    }
+  }
+  span.station {
+    background-color: $gray-dark;
+    color: white;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    border-right: 0;
+  }
+}

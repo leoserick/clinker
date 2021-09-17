@@ -1,0 +1,46 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  min-height: calc(100vh - 105px);
+  background-image: url("../images/hero-background.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    .cta {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: 420px;
+      @media screen and (max-width: $mobile){
+        justify-content: center;
+        flex-wrap: wrap;
+        min-width: 0;
+        width: 100%;
+      }
+      a {
+        width: 100%;
+        &:first-child {
+          margin-right: 16px;
+          @media screen and (max-width: $mobile){
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  lottie-player {
+    max-width: 420px;
+    max-height: 420px;
+    width: 100%;
+  }
+}
