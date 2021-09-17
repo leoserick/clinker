@@ -1,5 +1,5 @@
 footer {
-  background-image: url(../images/background-footer.svg);
+  background-image: url(../images/brick-wall.png);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -8,7 +8,6 @@ footer {
   width: 100%;
   padding-top: 40px;
   background-repeat: inherit;
-  background-size: 290px;
   background-color: white;
   .j-wrap {
     width: 100%;
@@ -42,10 +41,9 @@ footer {
     &:first-child {
       display: flex;
       flex-direction: column;
-      align-items: flex-end;
-      justify-content: space-between;
+      align-items: center;
+      justify-content: center;
       padding-right: 32px !important;
-      border-right: 2px dashed white;
       text-align: right;
       @media screen and (max-width: $mobile){
         align-items: center;

@@ -133,7 +133,7 @@ body {
   letter-spacing: 1px;
   line-height: 1.5;
   background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  background-image: url(../images/old-wall.png);
   margin-top: 0;
 }
 body * {
@@ -709,6 +709,33 @@ section {
   margin-bottom: 32px;
 }
 
+.case-study-header h1 {
+  max-width: 600px;
+}
+
+.case-study {
+  background: #e5e5e5;
+  padding: 32px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 992px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.case-study h1 {
+  max-width: 600px;
+}
+.case-study p {
+  max-width: 700px;
+}
+.case-study img {
+  align-self: center;
+}
+
 button, .btn-solid {
   position: relative;
   width: 100%;
@@ -768,7 +795,7 @@ button.bg-color-primary:hover, .btn-solid.bg-color-primary:hover {
 .btn-outline {
   border: 2px solid #0085FA;
   color: #0085FA;
-  background: #FFF;
+  background: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
@@ -1984,7 +2011,7 @@ header.main-nav.responsive #nav-icon span {
 }
 
 footer {
-  background-image: url(../images/background-footer.svg);
+  background-image: url(../images/brick-wall.png);
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
@@ -1993,7 +2020,6 @@ footer {
   width: 100%;
   padding-top: 40px;
   background-repeat: inherit;
-  background-size: 290px;
   background-color: white;
 }
 footer .j-wrap {
@@ -2027,10 +2053,9 @@ footer textarea {
 footer .unit:first-child {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   padding-right: 32px !important;
-  border-right: 2px dashed white;
   text-align: right;
 }
 @media screen and (max-width: 600px) {
