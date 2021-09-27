@@ -319,6 +319,16 @@ body .j-img-absolute {
   right: 0;
   margin: auto;
 }
+body .text-center {
+  text-align: center;
+}
+body .text-left {
+  text-align: left;
+}
+body .text-right {
+  text-align: right;
+}
+
 body .sr-only {
   position: absolute;
   width: 1px;
